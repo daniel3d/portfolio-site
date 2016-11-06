@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+* {
+  box-sizing: border-box; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444444; }
+
+body {
+  background: #FAFAFA;
+  line-height: 1.5;
+  scroll-behavior: smooth; }
+
+h2 {
+  padding-top: 8px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #2B2B2B; }
+
+a {
+  color: #1EA362; }
+
+button::-moz-focus-inner {
+  border: none; }
+
+.container {
+  display: flex;
+  /* or inline-flex */
+  max-width: 864px;
+  margin: 0 auto; }
+
+@media (max-width: 864px) {
+  .container {
+    padding: 0 25px; } }
+
+@media (min-width: 672px) {
+  .container {
+    padding: 0 25px; } }
+
+@media (min-width: 864px) {
+  .container {
+    padding: 0; } }
+
+.header {
+  background: #FAFAFA; }
+  .header .container {
+    min-height: 105px;
+    border-bottom: 4px solid #7d97ad; }
+
+.logo__icon {
+  background: url(/images/udacity.svg) left center no-repeat;
+  display: block;
+  min-height: 105px;
+  background-position: center; }
+
+@media (max-width: 423px) {
+  .logo {
+    width: 60px; } }
+
+@media (min-width: 424px) {
+  .logo {
+    width: 60px; } }
+
+.title {
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-transform: uppercase;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif; }
+  .title h1 {
+    margin: 0px;
+    font-size: 3em;
+    font-weight: 200;
+    max-height: 60px; }
+  .title h2 {
+    padding: 0px;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 1.1em; }

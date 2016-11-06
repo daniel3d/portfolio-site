@@ -1,0 +1,34 @@
+.header {
+  background: $base_bg_color;
+  .container {
+    min-height: $header_height;
+    border-bottom: 4px solid #7d97ad;
+  }
+}
+
+.logo__icon {
+  background: url(/images/udacity.svg) left center no-repeat;
+  display: block;
+  min-height: $header_height;
+  background-position: center;
+}
+
+@media (max-width: $screen_xsmall) {
+  .logo {
+    width: 60px;
+  }
+}
+
+@media (min-width: $screen_small) {
+  .logo {
+    width: 60px;
+  }
+}
+
+@media (min-width: $screen_medium) {
+
+}
+
+@media (min-width: $screen_big) {
+
+}
