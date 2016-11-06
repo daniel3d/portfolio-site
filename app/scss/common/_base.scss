@@ -32,10 +32,13 @@ button::-moz-focus-inner {
   border: none;
 }
 
+img { width: 100%; }
+
 .container {
   display: flex; /* or inline-flex */
   max-width: 864px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 

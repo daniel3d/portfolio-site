@@ -24,6 +24,13 @@ gulp.task('browserSync', function() {
   })
 })
 
+// Copy lib
+gulp.task('vendor', function() {
+  return gulp.src([
+      'node_modules/flexboxgrid/css/flexboxgrid.css'
+  ]).pipe(gulp.dest('app/vendor'))
+})
+
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass())
@@ -84,7 +91,7 @@ gulp.task('clean:dist', function() {
 // ---------------
 
 gulp.task('default', function(callback) {
-  runSequence(['sass', 'browserSync'], 'watch',
+  runSequence(['vendor', 'sass', 'browserSync'], 'watch',
     callback
   )
 })

@@ -2,8 +2,11 @@
 @import 'common/_fonts';
 @import 'common/_base';
 @import 'common/_header';
-
 //@import 'common/_debug';
+
+
+@import '_home';
+
 
 .title {
     display: flex;
