@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 html, body {
@@ -14,44 +15,26 @@ html, body {
 body {
   background: $base_bg_color;
   line-height: 1.5;
-  scroll-behavior: smooth;
-}
-
-h2 {
-  padding-top: $baseline;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: #2B2B2B;
 }
 
 a {
   color: #1EA362;
 }
 
+img { width: 100%; }
+
 button::-moz-focus-inner {
   border: none;
 }
 
-img { width: 100%; }
-
-.container {
-  display: flex; /* or inline-flex */
+.container-fluid {
   max-width: 864px;
-  margin: 0 auto;
-  flex-wrap: wrap;
 }
 
-
 @media (max-width: $screen_big) {
-  .container {
-    padding: 0 25px;
-  }
 }
 
 @media (min-width: $screen_medium) {
-  .container {
-    padding: 0 25px;
-  }
 }
 
 @media (min-width: $screen_medium) {
@@ -59,8 +42,5 @@ img { width: 100%; }
 }
 
 @media (min-width: $screen_big) {
-  .container {
-    padding: 0;
-  }
 }
 

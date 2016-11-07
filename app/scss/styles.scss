@@ -1,36 +1,7 @@
+//@import 'common/_debug';
 @import 'common/_variables';
 @import 'common/_fonts';
 @import 'common/_base';
 @import 'common/_header';
-//@import 'common/_debug';
-
 
 @import '_home';
-
-
-.title {
-    display: flex;
-    align-items: flex-end;
-    flex: 1;
-    justify-content: flex-end;
-    flex-direction: column;
-    text-transform: uppercase;
-    justify-content: center;
-
-    font-family: 'Roboto', sans-serif;
-
-    h1 {
-		margin: 0px;
-		font-size: 3em;
-		font-weight: 200;
-		max-height: 60px;
-    }
-
-    h2 {
-		padding: 0px;
-		margin: 0px;
-		font-weight: 400;
-		font-size: 1.1em;
-    }
-
-}

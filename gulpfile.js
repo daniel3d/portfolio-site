@@ -33,7 +33,10 @@ gulp.task('vendor', function() {
 
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass())
+    .pipe(sourcemaps.write())
+    .pipe(autoprefixer())
     .pipe(gulp.dest('app/css/compiled'))
     .pipe(browserSync.reload({
       stream: true

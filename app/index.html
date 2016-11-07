@@ -15,38 +15,45 @@
 <body>
 
   <header class="header">
-    <div class="container">
-      <div class="logo">
-        <a href="/" class="logo__icon" title="Go to home page"></a>
-      </div>
-      <div class="title">
-        <h1>Jane Doette</h1>
-        <h2>Front-end Ninja</h2>
+    <div class="container-fluid">
+      <div class="row header__content">
+        <div class="logo">
+          <a href="/" class="logo__icon" title="Go to home page">
+          </a>
+        </div>
+        <div class="title">
+          <h1>Jane Doette</h1>
+          <span>Front-end Ninja</span>
+        </div>
       </div>
     </div>
   </header>
 
-  <div class="container">
-    <div class="slider">
-      <img src="/images/slide1.jpg"/>
+  <div class="container-fluid">
+
+    <div class="row slider">
+      <div class="col-12">
+        <img src="/images/slide1.jpg"/>
+      </div>
     </div>
-    <div class="portfolio">
-      <h1>Featured Work</h1>
-      <div class="portfolio_projects">
-        <div class="portfolio__item col-xs-12 col-sm-4 col-lg-4">
-          <img src="/images/slide1.jpg"/>
-          <div class="portfolio__item__title">Appify</div>
-          <div class="portfolio__item__link">http://github.com</div>
+
+    <div class="row portfolio">
+      <h2>Featured Work</h2>
+      <div class="projects">
+        <div class="col-4">
+          <img src="/images/project1.jpg"/>
+          <h3 class="">Appify</h3>
+          <p><a href="#">http://github.com</a></p>
         </div>
-        <div class="portfolio__item col-xs-12 col-sm-4 col-lg-4">
-          <img src="/images/slide1.jpg"/>
-          <div class="portfolio__item__title">Appify</div>
-          <div class="portfolio__item__link">http://github.com</div>
+        <div class="col-4">
+          <img src="/images/project2.jpg"/>
+          <h3 class="">Appify</h3>
+          <span class="">http://github.com</span>
         </div>
-        <div class="portfolio__item col-xs-12 col-sm-4 col-lg-4">
-          <img src="/images/slide1.jpg"/>
-          <div class="portfolio__item__title">Appify</div>
-          <div class="portfolio__item__link">http://github.com</div>
+        <div class="col-4">
+          <img src="/images/project3.jpg"/>
+          <h3 class="">Appify</h3>
+          <span class="">http://github.com</span>
         </div>
       </div>
     </div>

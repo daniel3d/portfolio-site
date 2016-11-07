@@ -2,6 +2,5 @@ dist
 node_modules
 npm-debug.log
 npm-debug.log.*
-app\vendor\*
-app\css\compiled\*
-app/css/compiled/styles.css
+app/vendor/*
+app/css/compiled/*
