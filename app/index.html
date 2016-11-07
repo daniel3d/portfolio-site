@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Udacity Build a Portfolio Site</title>
-
-  <!--build:css css/styles.min.css-->
-  <link rel="stylesheet" href="vendor/flexboxgrid.css">
-  <link rel="stylesheet" href="css/compiled/styles.css">
-  <link rel="stylesheet" href="css/compiled/print.css">
-  <!--endbuild-->
-</head>
-
-<body>
-
-  <header class="header">
+  <head>
+    <meta charset="UTF-8">
+    <title>Udacity Build a Portfolio Site</title>
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="vendor/flexboxgrid.css">
+    <link rel="stylesheet" href="css/compiled/styles.css">
+    <link rel="stylesheet" href="css/compiled/print.css">
+    <!--endbuild-->
+  </head>
+  <body>
+    <header class="container-fluid header">
+      <div class="row">
+        <div class="col-xs">
+          <div class="header__content">
+            <div class="row">
+              <div class="col-xs-2">
+                <div class="logo">
+                  <a href="/" class="logo__icon" title="Go to home page">
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs">
+                <div class="title">
+                  <h1>Jane Doette</h1>
+                  <span>Front-end Ninja</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="container-fluid">
-      <div class="row header__content">
-        <div class="logo">
-          <a href="/" class="logo__icon" title="Go to home page">
-          </a>
+      <div class="row">
+        <div class="col-xs">
+          <div class="slider">
+            <div class="row">
+              <div class="col-xs">
+                <img src="/images/slide1.jpg"/>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="title">
-          <h1>Jane Doette</h1>
-          <span>Front-end Ninja</span>
+      </div>
+      <div class="row">
+        <div class="col-xs">
+          <h2>Featured Work</h2>
+          <div class="portfolio">
+            <div class="row">
+              <div class="portfolio__item col-xs">
+                <img src="/images/project1.jpg"/>
+                <h3 class="">Appify</h3>
+                <p><a href="#">http://github.com</a></p>
+              </div>
+              <div class="portfolio__item col-xs">
+                <img src="/images/project2.jpg"/>
+                <h3 class="">Appify</h3>
+                <p><a href="#">http://github.com</a></p>
+              </div>
+              <div class="portfolio__item col-xs">
+                <img src="/images/project3.jpg"/>
+                <h3 class="">Appify</h3>
+                <p><a href="#">http://github.com</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </header>
-
-  <div class="container-fluid">
-
-    <div class="row slider">
-      <div class="col-12">
-        <img src="/images/slide1.jpg"/>
-      </div>
-    </div>
-
-    <div class="row portfolio">
-      <h2>Featured Work</h2>
-      <div class="projects">
-        <div class="col-4">
-          <img src="/images/project1.jpg"/>
-          <h3 class="">Appify</h3>
-          <p><a href="#">http://github.com</a></p>
-        </div>
-        <div class="col-4">
-          <img src="/images/project2.jpg"/>
-          <h3 class="">Appify</h3>
-          <span class="">http://github.com</span>
-        </div>
-        <div class="col-4">
-          <img src="/images/project3.jpg"/>
-          <h3 class="">Appify</h3>
-          <span class="">http://github.com</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--build:js js/main.min.js -->
-  <script src="js/lib/a-library.js"></script>
-  <script src="js/lib/another-library.js"></script>
-  <script src="js/main.js"></script>
-  <!-- endbuild -->
-</body>
-
+    <!--build:js js/main.min.js -->
+    <script src="js/lib/a-library.js"></script>
+    <script src="js/lib/another-library.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>

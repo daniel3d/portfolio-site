@@ -1,15 +1,22 @@
 .slider {
-	margin-top: 25px;
+	margin-top: 15px;
 }
 
 .portfolio {
-	
+
 }
 
-.projects{
-	display: flex;
+
+@media (max-width: $screen_big) {
+
 }
 
-.portfolio__item {
-	text-align: center;
+@media (min-width: $screen_medium) {
+	.portfolio__item {
+		text-align: center;
+	}
+}
+
+@media (min-width: $screen_big) {
+
 }
