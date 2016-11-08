@@ -27,22 +27,12 @@ img, embed, object, video { max-width: 100%; }
 
 img { width: 100%; }
 
+hr { border-bottom: 3px solid $color_muted; }
+
 button::-moz-focus-inner {
   border: none;
 }
 
 .container-fluid {
   max-width: 1024px;
-}
-
-@media only screen and (min-width: $screen_sm) {
-
-}
-
-@media only screen and (min-width: $screen_md) {
-
-}
-
-@media only screen and (min-width: $screen_lg) {
-
 }

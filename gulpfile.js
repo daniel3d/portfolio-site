@@ -11,6 +11,13 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+var plumber = require('gulp-plumber');
+var gutil = require('gulp-util');
+
+var onError = function (err) {  
+  gutil.beep();
+  console.log(err);
+};
 
 // Development Tasks 
 // -----------------
@@ -33,8 +40,11 @@ gulp.task('vendor', function() {
 
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss')
+    .pipe(plumber({
+      errorHandler: onError
+    }))
     .pipe(sourcemaps.init())
-    .pipe(sass())
+    .pipe(sass({includePaths: ['app/scss']}))
     .pipe(sourcemaps.write())
     .pipe(autoprefixer())
     .pipe(gulp.dest('app/css/compiled'))

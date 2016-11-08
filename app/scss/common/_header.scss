@@ -1,3 +1,8 @@
+header {
+  margin-bottom: 10px;
+  margin-bottom: 0px;
+}
+
 .logo {
   min-width: 100%;
   max-width: 100%;
@@ -21,18 +26,25 @@
   h1 {
     margin: 0;     
     font-size: 2em; 
+    font-weight: 300;
   }
 
   h4 { 
     margin: 0; 
     font-size: 1em;
     margin-bottom: 15px;
+    margin-top: -8px;
   }
 
 }
 
 @media only screen and (min-width: 348px) {
-
+  
+  header {
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  
   .logo { 
     min-width: auto;
     max-width: 30%;
@@ -49,9 +61,12 @@
     
     text-align: right;
 
-    h1 { font-size: 1.7em; }
+    h1 { 
+      font-size: 2em; 
+      margin-top: 5px;
+    }
     h4 { 
-      font-size: 1em;
+      font-size: 0.7em;
       margin-bottom: 0px;
     }
   }
@@ -59,11 +74,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .logo { height: 100px; }
+  .logo { 
+    margin-top: 16px; 
+  }
   .logo__icon {
     max-width: 78px;
   }
   .header__title {
     h1 { font-size: 3em; }
+    h4 { font-size: 1.2em; }
   }
 }
