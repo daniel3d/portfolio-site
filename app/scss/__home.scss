@@ -6,17 +6,14 @@
 
 }
 
-
-@media (max-width: $screen_big) {
+@media only screen and (min-width: $screen_sm) {
 
 }
 
-@media (min-width: $screen_medium) {
-	.portfolio__item {
-		text-align: center;
-	}
+@media only screen and (min-width: $screen_md) {
+
 }
 
-@media (min-width: $screen_big) {
+@media only screen and (min-width: $screen_lg) {
 
 }

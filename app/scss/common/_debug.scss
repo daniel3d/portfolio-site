@@ -1,15 +1,11 @@
-@media (max-width: $screen_xsmall) {
-  .header { background: red; }
+@media only screen and (min-width: $screen_sm) {
+	header { background: red; }
 }
 
-@media (min-width: $screen_small) {
-  .header { background: blue; }
+@media only screen and (min-width: $screen_md) {
+	header { background: green; }
 }
 
-@media (min-width: $screen_medium) {
-  .header { background: green; }
-}
-
-@media (min-width: $screen_big) {
-  .header { background: $base_bg_color; }
+@media only screen and (min-width: $screen_lg) {
+	header { background: blue; }
 }

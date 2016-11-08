@@ -1,11 +1,13 @@
-$baseline: 8px;
-$header_height: 105px;
-
 // Colors
-$base_color: #7d97ad;
-$base_bg_color: white;
+$color_base: #7d97ad;
+$color_muted: #7d97ad;
+$color_primary: #7d97ad;
 
-$screen_xsmall: 423px;
-$screen_small: 424px;
-$screen_medium: 672px;
-$screen_big: 864px;
+// Backgrounds
+$background_default: white;
+
+// Screen sizes
+$screen_xs:  0em;
+$screen_sm: 48em;
+$screen_md: 62em;
+$screen_lg: 75em;

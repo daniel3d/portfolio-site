@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Udacity Build a Portfolio Site</title>
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="vendor/flexboxgrid.css">
@@ -10,65 +11,57 @@
     <!--endbuild-->
   </head>
   <body>
-    <header class="container-fluid header">
-      <div class="row">
-        <div class="col-xs">
-          <div class="header__content">
-            <div class="row">
-              <div class="col-xs-2">
-                <div class="logo">
-                  <a href="/" class="logo__icon" title="Go to home page">
-                  </a>
-                </div>
-              </div>
-              <div class="col-xs">
-                <div class="title">
-                  <h1>Jane Doette</h1>
-                  <span>Front-end Ninja</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+
     <div class="container-fluid">
+      
+      <header class="row">
+        <div class="col-xs logo">
+          <a href="/" class="logo__icon" title="Udacity Logo"></a>
+        </div>
+        <div class="col-xs header__title text-uppercase">
+          <h1 class="text-thin text-uppercase">Jane Doette</h1>
+          <h4 class="text-strong text-uppercase">Front-end Ninja</h4>
+        </div>
+      </header>
+
       <div class="row">
         <div class="col-xs">
-          <div class="slider">
-            <div class="row">
-              <div class="col-xs">
-                <img src="/images/slide1.jpg"/>
-              </div>
-            </div>
-          </div>
+          <hr>
         </div>
       </div>
+
       <div class="row">
         <div class="col-xs">
-          <h2>Featured Work</h2>
-          <div class="portfolio">
-            <div class="row">
-              <div class="portfolio__item col-xs">
-                <img src="/images/project1.jpg"/>
-                <h3 class="">Appify</h3>
-                <p><a href="#">http://github.com</a></p>
-              </div>
-              <div class="portfolio__item col-xs">
-                <img src="/images/project2.jpg"/>
-                <h3 class="">Appify</h3>
-                <p><a href="#">http://github.com</a></p>
-              </div>
-              <div class="portfolio__item col-xs">
-                <img src="/images/project3.jpg"/>
-                <h3 class="">Appify</h3>
-                <p><a href="#">http://github.com</a></p>
-              </div>
-            </div>
-          </div>
+          <img src="http://placekitten.com/960/406?image=2" alt="placekitten"/>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-xs">
+          <h2 class="text-muted">Featured Work</h2>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-xs-12 col-sm-4">
+          <img src="http://placekitten.com/298/195?image=9" alt="placekitten"/>
+          <h3 class="">Appify</h3>
+          <p><a href="#">http://github.com</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <img src="http://placekitten.com/298/195?image=1" alt="placekitten"/>
+          <h3 class="">Appify</h3>
+          <p><a href="#">http://github.com</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <img src="http://placekitten.com/298/195?image=16" alt="placekitten"/>
+          <h3 class="">Appify</h3>
+          <p><a href="#">http://github.com</a></p>
+        </div>
+      </div>
+    
     </div>
+
     <!--build:js js/main.min.js -->
     <script src="js/lib/a-library.js"></script>
     <script src="js/lib/another-library.js"></script>

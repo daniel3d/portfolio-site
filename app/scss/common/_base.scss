@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
 }
 
 html, body {
@@ -8,18 +7,23 @@ html, body {
   margin: 0;
   width: 100%;
   min-height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  color: $base_color;
 }
 
 body {
-  background: $base_bg_color;
+  background: $background_default;
   line-height: 1.5;
 }
 
 a {
   color: #1EA362;
 }
+
+nav a, button {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+img, embed, object, video { max-width: 100%; }
 
 img { width: 100%; }
 
@@ -31,16 +35,14 @@ button::-moz-focus-inner {
   max-width: 1024px;
 }
 
-@media (max-width: $screen_big) {
-}
-
-@media (min-width: $screen_medium) {
-}
-
-@media (min-width: $screen_medium) {
+@media only screen and (min-width: $screen_sm) {
 
 }
 
-@media (min-width: $screen_big) {
+@media only screen and (min-width: $screen_md) {
+
 }
 
+@media only screen and (min-width: $screen_lg) {
+
+}
