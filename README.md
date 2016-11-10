@@ -6,7 +6,7 @@
 #### Installation instructions
 
  * Run `npm install` command after cloning this repo to get all the required grund dependencies.
- * Run `gulp` to serve the website over [http://localhost:3000](localhost:3000).
+ * Run `gulp` to serve the website over [localhost:3000](http://localhost:3000).
  * Run `gulp build` to create compiled, minified and clean version of the project.
  	* All scss files can be found in the `\app\scss` folder
   	* After running build the `\dist` folder will contein the final project output.
