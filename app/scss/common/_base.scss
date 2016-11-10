@@ -7,6 +7,9 @@ html, body {
   margin: 0;
   width: 100%;
   min-height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: $color_base;
 }
 
 body {
@@ -29,6 +32,13 @@ img { width: 100%; }
 
 hr { border-bottom: 3px solid $color_muted; }
 
+a {
+  color: $color_base;
+  text-decoration: none;
+}
+
+a:hover { color: $color_primary; }
+
 button::-moz-focus-inner {
   border: none;
 }
@@ -36,3 +46,11 @@ button::-moz-focus-inner {
 .container-fluid {
   max-width: 1024px;
 }
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-uppercase { text-transform: uppercase; }
+.text-thin { font-weight: lighter; }
+.text-strong { font-weight: bolder; }
+.text-muted { color: $color_muted }

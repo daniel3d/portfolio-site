@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Udacity Build a Portfolio Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="vendor/flexboxgrid.css">
     <link rel="stylesheet" href="css/compiled/styles.css">
@@ -31,40 +32,41 @@
       </div>
 
       <div class="row">
-        <div class="hero col-xs">
-          <img src="http://placekitten.com/960/406?image=2" alt="placekitten"/>
+        <div class="col-xs hero">
+          <img src="http://placekitten.com/960/406?image=2" alt="Portfolio Kitten"/>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-xs">
+      <section class="row">
+        <div class="col-xs-12">
           <h2 class="text-muted">Featured Work</h2>
         </div>
-      </div>
-
-      <div class="row text-center">
-        <div class="col-xs-12 col-sm-4">
-          <img src="http://placekitten.com/298/195?image=9" alt="placekitten"/>
-          <h3 class="">Appify</h3>
-          <p><a href="#">https://github.com/udacity/Appify</a></p>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <img src="http://placekitten.com/298/195?image=1" alt="placekitten"/>
-          <h3 class="">SUNFLOWER</h3>
-          <p><a href="#">https://github.com/udacity/Sunflower</a></p>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <img src="http://placekitten.com/298/195?image=16" alt="placekitten"/>
-          <h3 class="">BOKEH</h3>
-          <p><a href="#">https://github.com/udacity/Bokeh</a></p>
-        </div>
-      </div>
+        <article class="col-xs-12 col-sm-4 project">
+          <a href="https://github.com/udacity/Appify">
+            <img src="http://placekitten.com/298/195?image=9" alt="Appify Kitten"/>
+            <h3 class="">Appify</h3>
+            <p>https://github.com/udacity/Appify</p>
+          </a>
+        </article>
+        <article class="col-xs-12 col-sm-4 project">
+          <a href="https://github.com/udacity/Sunflower">
+            <img src="http://placekitten.com/298/195?image=1" alt="Appify Sunflower"/>
+            <h3 class="">SUNFLOWER</h3>
+            <p>https://github.com/udacity/Sunflower</p>
+          </a>
+        </article>
+        <article class="col-xs-12 col-sm-4 project">
+          <a href="https://github.com/udacity/Bokeh">
+            <img src="http://placekitten.com/298/195?image=16" alt="Appify Bokeh"/>
+            <h3 class="">BOKEH</h3>
+            <p>https://github.com/udacity/Bokeh</p>
+          </a>
+        </article>
+      </section>
     
     </div>
 
     <!--build:js js/main.min.js -->
-    <script src="js/lib/a-library.js"></script>
-    <script src="js/lib/another-library.js"></script>
     <script src="js/main.js"></script>
     <!-- endbuild -->
   </body>

@@ -1,4 +1,7 @@
-.hero { margin-top: 15px; }
+.hero { 
+	display: none;
+	margin-top: 15px; 
+}
 
 p {
 	margin-top: 0;
@@ -6,11 +9,51 @@ p {
 
 h2 {
     font-size: 2em;
-    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
-h3 {
-    font-size: 2.5em;
-    text-transform: uppercase;
-    margin: 0;
+.project {
+	
+	img { 
+		transform: perspective(1px) translateZ(0);
+		transition-duration: 0.3s;
+		transition-property: transform;
+		transition-timing-function: ease-out;
+	}
+	
+	p { 
+		visibility: hidden;
+		font-size: 0.9em; 
+	}
+
+	h3 {
+		font-size: 1.5em;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	text-align: center;
+
+}
+
+.project:hover { 
+	img { transform: scale(1.1) rotate(4deg); } 
+}
+
+@media only screen and (min-width: 348px) {
+
+	.hero { display: initial; }
+
+	.project {
+		p { visibility: visible; }
+		h3 { font-size: 2.5em; }
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 950px) {
+	.project { 
+		h3 { font-size: 1.6em; }
+	 	 p { font-size: 0.8em; }
+	}
 }
