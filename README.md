@@ -2,6 +2,8 @@
 
 ## For Udacity Full Stack Web Developer Nanodegree
 
+![screenshot](https://c1.staticflickr.com/1/684/33203061401_4c0e5c8b7a_b.jpg)
+
 ![Valid CSS](http://jigsaw.w3.org/css-validator/images/vcss) ![Valid CSS](http://jigsaw.w3.org/css-validator/images/vcss-blue)
 #### Installation instructions
 
